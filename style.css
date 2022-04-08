@@ -19,7 +19,7 @@
     width: 160px;
     display: flex;
     justify-content: center;
-
+    margin-right: auto;
 }
 
 .img1 > .card-body {
