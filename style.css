@@ -1,5 +1,90 @@
-:html {
+:root {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse-Bold'), url('/home/tyler/repos/odin-signup/Norse-Bold.otf') format('truetype');
+  }
+
+.img1 {
+    position: fixed;
+    height: 100%;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img1 > .card-body {
+        position: absolute;
+        width: 100%;
+        background: black;
+        opacity: 0.6;
+        color: white;
+        top: 8rem;
+        text-align: center;
+        font-size: 1.2em;
+        font-family: 'Norse-Bold';
+        
+    }
+.img1 > p {
+    position: absolute;
+    font-size: 1px;
+}
+
+.rightside {
+    position: relative;
+    margin-left: 200px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: medium;
+}
+form {
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 10 px;
+    margin: 0 auto;
+    padding: 1em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10em 1em 1em 1em;
+}
+form > h4 {
+    font-size: medium;
+    text-decoration-color: grey;
+}
+.error {
+    --color-error-text: red;
+    --modal-border: 1px solid black;
+    --modal-font-size: calc(2rem + 5vw);
+  
+    color: var(--color-error-text);
+    border: var(--modal-border);
+    font-size: var(--modal-font-size);
+  }
+
+#btnSubmit {
+    background-color: #596D48;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:focus {
+    border-radius: 0%;
+    border-color: blue;
+    box-shadow:aqua 1em;
 }
 

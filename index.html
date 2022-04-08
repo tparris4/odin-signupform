@@ -8,12 +8,26 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <p class="header">
+    <div class="container">
+        <div clas="img1">
+            <div class="card-body">
+                <img class="odin1" src="/home/tyler/repos/odin-signup/odin-lined.png">
+                ODIN
+            </div>
+            <img class="bg1" src="/home/tyler/repos/odin-signup/halie-west-25xggax4bSA-unsplash.jpg">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  </p>
+        </div>
+
+        <div class="rightside">
+        <div class="paragraph">
+                <p class="header">
         This is not a real online service! You know you need something <br>
         like this in your life to help you realize your deepest dreams. <br>
         Sign up <i>now</i> to get started. <br> <br> You know you want to.
     </p>
-
+</div>
+<div class="form container">
     <form action="">
         <h4>Let's do this</h4>
 
@@ -40,18 +54,21 @@
         <div id="Password">
             <label for="password" class="password">Password: </label>
     <link rel="stylesheet" href="style.css" />
-            <input type="password" id="pass1" class="password" name="pass" patten="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <input type="password" id="pass1" class="error" name="pass" patten="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
         </div>
 
         <div id="Password2">
             <label for="password2" class="password2">Confirm Password: </label>
-            <input type="password2" id="pass2" class="password2" name="pass2" required>
+            <input type="password2" id="pass2" class="error" name="pass2" required>
         </div>
 
-        <input type="button" id="btnSubmit" value="Submit" onclick="return Validate()" />
+        <input type="button" id="btnSubmit" value="Create Account" onclick="return Validate()">
+        <br>
+        Already have an account? <a href="">Log in</a> 
     </form>
-
-
+</div>
+</div>
+</div>
 
 
     <script type="text/javascript" defer>
